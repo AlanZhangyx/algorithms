@@ -1,9 +1,10 @@
-package alan.algorithm.sort;
+package alan.algorithm.sort.exchange;
 
 public class QuickSort {
 
 	public static void main(String[] args) {
-		int[] array={234,23,123,0,-345,123,-45,34,345,-9};
+		//int[] array={234,23,123,0,-345,123,-45,34,345,-9};
+		int[] array={-5,-6,0,2,0,-2,-8,10};
 		quickSort1(array,0,array.length-1);
 		int i=0;
 		while(array.length>i){

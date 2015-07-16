@@ -1,5 +1,15 @@
-package alan.algorithm.sort;
+package alan.algorithm.sort.exchange;
 
+
+
+/**
+ * 交换排序：根据序列中两个键值的比较结果来对换他们在序列中的位置。
+ * 通常将键值大的移到队尾，将键值小的移到队首。
+ * Introduction this Type.
+ * 
+ * @author ZhangYaxu
+ * @date Jul 16, 2015
+ */
 public class BubbleSort {
 	public static void main(String[] args) {
 		//BubbleSort is likes bubble.
