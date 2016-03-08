@@ -3,11 +3,11 @@ package alan.algorithm.sort.exchange;
 public class QuickSort {
 
 	public static void main(String[] args) {
-		//int[] array={234,23,123,0,-345,123,-45,34,345,-9};
-		int[] array={-5,-6,0,2,0,-2,-8,10};
-		quickSort1(array,0,array.length-1);
-		int i=0;
-		while(array.length>i){
+		// int[] array={234,23,123,0,-345,123,-45,34,345,-9};
+		int[] array = { -5, -6, 0, 2, 0, -2, -8, 10 };
+		quickSort1(array, 0, array.length - 1);
+		int i = 0;
+		while (array.length > i) {
 			System.out.println(array[i]);
 			i++;
 		}
@@ -34,23 +34,23 @@ public class QuickSort {
 	 * @param left
 	 * @param right
 	 */
-	private static void quickSort1(int[] arrs,int left,int right){
-		if(left<right){
-			int l=left,r=right,key=arrs[left];
-			while(l<r){
-				while (l<r&&arrs[r]>=key) {//只要小与key的
+	private static void quickSort1(int[] arrs, int left, int right) {
+		if (left < right) {
+			int l = left, r = right, key = arrs[left];
+			while (l < r) {
+				while (l < r && arrs[r] >= key) {// 只要小与key的
 					r--;
 				}
-				arrs[l]=arrs[r];
-				
-				while (l<r&&arrs[l]<=key) {//只要大于key的
+				arrs[l] = arrs[r];
+
+				while (l < r && arrs[l] <= key) {// 只要大于key的
 					l++;
 				}
-				arrs[r]=arrs[l];
+				arrs[r] = arrs[l];
 			}
-			arrs[l]=key;
-			quickSort1(arrs,left,l-1);
-			quickSort1(arrs,l+1,right);
+			arrs[l] = key;
+			quickSort1(arrs, left, l - 1);
+			quickSort1(arrs, l + 1, right);
 		}
 	}
 }
